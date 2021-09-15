@@ -33,6 +33,10 @@ i{
     transform: translateX(-50%);
     height: 10px;
     width: 10px;
-    background-color: black;
+    background-color: aqua;
     border-radius: 100%
+}
+
+.active{
+    background-color: red;
 }

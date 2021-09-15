@@ -25,7 +25,9 @@
 
                 <div @click="next()" class="slide-next"><i class="fas fa-angle-right"></i></div>
 
-                <div class="dot"></div>
+                <div class="dot" :class="(index == count) ? 'active' : '' " v-for="(img, index) in images"></div>
+
+                
             </div>
         </div>
     </div>
