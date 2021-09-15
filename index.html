@@ -19,15 +19,17 @@
 
                 <div @click="previus()" class="slide-previus"><i class="fas fa-angle-left"></i></div>
 
-                <div class="slide-box-foto">
+                <div class="slide-box-foto position-relative">
                     <img  :src="images[count].url" alt="">
+                    <nav class="position-absolute d-flex">
+                        <div class="dot rounded-circle" :class="(index == count) ? 'active' : ''" v-for="(img, index) in images"></div>
+                    </nav>
                 </div>
 
                 <div @click="next()" class="slide-next"><i class="fas fa-angle-right"></i></div>
 
-                <div class="dot" :class="(index == count) ? 'active' : '' " v-for="(img, index) in images"></div>
 
-                
+
             </div>
         </div>
     </div>
